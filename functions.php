@@ -31,3 +31,10 @@ add_action('after_setup_theme','learningWordPress_setup');
 //}
 //
 //add_action('wp_nav_menu','show_subMenus');
+
+// Customize excerpt word count length
+function custom_excerpt_length(){
+    return 10;
+}
+
+add_filter('excerpt_length','custom_excerpt_length');
