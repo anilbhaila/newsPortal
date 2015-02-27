@@ -60,7 +60,7 @@
     <header id="header" class="container">
         <div id="mast-head">
             <div id="logo">
-                <a href="index.html" title="Magazine" rel="home"><img src="images/logo.png" alt="Magazine" /></a>
+                <a href="index.html" title="Magazine" rel="home"><img src="<?php echo get_template_directory_uri().'/images/logo.png';?>" alt="Magazine" /></a>
             </div>
         </div>
 
@@ -92,7 +92,7 @@
                                 </script>
                         </span>
                     </li>
-                    <li><a href="index.html"><img src="images/home.png" alt="Magazine"></a></li>
+                    <li><a href="index.html"><img src="<?php echo get_template_directory_uri().'/images/home.png';?>" alt="Magazine"></a></li>
 
                     <!--
                     <li class="dropdown"><a href="index.html">Home</a>
@@ -154,7 +154,7 @@
             <div class="span3">
                 <article class="post">
                     <a href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark">
-                        <img width="225" height="136" src="images/dummy/photodune-2043745-college-student-s-225x136.jpg" class="thumb" alt="photodune-2043745-college-student-s" />
+                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-225x136.jpg';?>" class="thumb" alt="photodune-2043745-college-student-s" />
                     </a>
                     <div class="entry">
                         <h3><a href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark">Donec consectetuer ligula vulputate...</a></h3>
@@ -167,7 +167,7 @@
             <div class="span3">
                 <article class="post">
                     <a href="#" title="Permalink to Nam nibh arcu tristique eget pretium vitae libero ac risus" rel="bookmark">
-                        <img width="225" height="136" src="images/dummy/photodune-3517559-idea-s-225x136.jpg" class="thumb" alt="photodune-3517559-idea-s" />
+                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3517559-idea-s-225x136.jpg';?>" class="thumb" alt="photodune-3517559-idea-s" />
                     </a>
                     <div class="entry">
                         <h3><a href="#" title="Permalink to Nam nibh arcu tristique eget pretium vitae libero ac risus" rel="bookmark">Nam nibh arcu tristique eget pretiu...</a></h3>
@@ -180,7 +180,7 @@
             <div class="span3">
                 <article class="post">
                     <a href="#" title="Permalink to Aliquam quam lectus pulvinar urna leo dignissim lorem" rel="bookmark">
-                        <img width="225" height="136" src="images/dummy/shutterstock_2114081-225x136.jpg" class="thumb" alt="shutterstock_2114081" />
+                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_2114081-225x136.jpg';?>" class="thumb" alt="shutterstock_2114081" />
                     </a>
                     <div class="entry">
                         <h3><a href="#" title="Permalink to Aliquam quam lectus pulvinar urna leo dignissim lorem" rel="bookmark">Aliquam quam lectus pulvinar urna l...</a></h3>
@@ -193,7 +193,7 @@
             <div class="span3">
                 <article class="post">
                     <a href="#" title="Permalink to Phasellus scelerisque massa molestie iaculis lectus pulvinar" rel="bookmark">
-                        <img width="225" height="136" src="images/dummy/shutterstock_109209743-225x136.jpg" class="thumb" alt="shutterstock_109209743" />
+                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_109209743-225x136.jpg';?>" class="thumb" alt="shutterstock_109209743" />
                     </a>
                     <div class="entry">
                         <h3><a href="#" title="Permalink to Phasellus scelerisque massa molestie iaculis lectus pulvinar" rel="bookmark">Phasellus scelerisque massa molesti...</a></h3>
@@ -235,7 +235,7 @@
                         <ul class="slides">
                             <li data-thumb="images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg">
                                 <a href="#" title="Permalink to Morbi est est lectus non rutrum commodo felis quis tortor" rel="bookmark">
-                                    <img width="546" height="291" src="images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg" alt="photodune-3834701-laughing-girl-xs" />
+                                    <img width="546" height="291" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg';?>" alt="photodune-3834701-laughing-girl-xs" />
                                 </a>
                                 <div class="entry">
                                     <h4>Morbi est est lectus non rutrum commodo felis quis tortor...</h4>
@@ -245,7 +245,7 @@
 
                             <li data-thumb="images/dummy/photodune-2043745-college-student-s-546x291.jpg">
                                 <a href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark">
-                                    <img width="546" height="291" src="images/dummy/photodune-2043745-college-student-s-546x291.jpg" alt="photodune-2043745-college-student-s" />
+                                    <img width="546" height="291" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-546x291.jpg';?>" alt="photodune-2043745-college-student-s" />
                                 </a>
                                 <div class="entry">
                                     <h4>Donec consectetuer ligula vulputate sem tristique cursus...</h4>
@@ -255,7 +255,7 @@
 
                             <li data-thumb="images/dummy/shutterstock_123603871-546x291.jpg">
                                 <a href="#" title="Permalink to Quisque sodales viverra ornare vitae libero ac risus" rel="bookmark">
-                                    <img width="546" height="291" src="images/dummy/shutterstock_123603871-546x291.jpg" alt="gallery-1" />
+                                    <img width="546" height="291" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_123603871-546x291.jpg';?>" alt="gallery-1" />
                                 </a>
                                 <div class="entry">
                                     <h4>Quisque sodales viverra ornare vitae libero ac risus...</h4>
@@ -265,7 +265,7 @@
 
                             <li data-thumb="images/dummy/shutterstock_109209743-546x291.jpg">
                                 <a href="#" title="Permalink to Vestibulum auctor dapibus neque pulvinar urna leo" rel="bookmark">
-                                    <img width="546" height="291" src="images/dummy/shutterstock_109209743-546x291.jpg" alt="shutterstock_109209743" />
+                                    <img width="546" height="291" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_109209743-546x291.jpg';?>" alt="shutterstock_109209743" />
                                 </a>
                                 <div class="entry">
                                     <h4>Vestibulum auctor dapibus neque pulvinar urna leo...</h4>
@@ -290,10 +290,10 @@
                     <h3 class="title"><span>Hot Stuff</span></h3>
                     <ul class="bxslider">
                         <li><a class="image_thumb_zoom" href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark">
-                                <img width="225" height="136" src="images/dummy/photodune-2043745-college-student-s-225x136.jpg" alt="photodune-2043745-college-student-s" />
+                                <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-225x136.jpg';?>" alt="photodune-2043745-college-student-s" />
                             </a>
                             <h4 class="post-title clearfix">
-                                <img class="post-icon" alt="Text post" src="images/text.png">
+                                <img class="post-icon" alt="Text post" src="<?php echo get_template_directory_uri().'/images/text.png';?>">
                                 <a href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark">Donec consectetuer ligula vulputate...	</a>
                             </h4>
                             <div class="meta clearfix">
@@ -308,10 +308,10 @@
                             </div>
                         </li>
                         <li><a class="image_thumb_zoom" href="#" title="Permalink to Nam nibh arcu tristique eget pretium vitae libero ac risus" rel="bookmark">
-                                <img width="225" height="136" src="images/dummy/photodune-3517559-idea-s-225x136.jpg" alt="photodune-3517559-idea-s" />
+                                <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3517559-idea-s-225x136.jpg';?>" alt="photodune-3517559-idea-s" />
                             </a>
                             <h4 class="post-title clearfix">
-                                <img class="post-icon" alt="Gallery post" src="images/image.png">
+                                <img class="post-icon" alt="Gallery post" src="<?php echo get_template_directory_uri().'/images/image.png';?>">
                                 <a href="#" title="Permalink to Nam nibh arcu tristique eget pretium vitae libero ac risus" rel="bookmark">Nam nibh arcu tristique eget pretiu...</a>
                             </h4>
                             <div class="meta clearfix">
@@ -326,10 +326,10 @@
                             </div>
                         </li>
                         <li><a class="image_thumb_zoom" href="#" title="Permalink to Aliquam quam lectus pulvinar urna leo dignissim lorem" rel="bookmark">
-                                <img width="225" height="136" src="images/dummy/shutterstock_2114081-225x136.jpg" alt="shutterstock_2114081" />
+                                <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_2114081-225x136.jpg';?>" alt="shutterstock_2114081" />
                             </a>
                             <h4 class="post-title clearfix">
-                                <img class="post-icon" alt="Photo" src="images/photo.png">
+                                <img class="post-icon" alt="Photo" src="<?php echo get_template_directory_uri().'/images/photo.png';?>">
                                 <a href="#" title="Permalink to Aliquam quam lectus pulvinar urna leo dignissim lorem" rel="bookmark">Aliquam quam lectus pulvinar urna l...</a>
                             </h4>
                             <div class="meta clearfix">
@@ -344,10 +344,10 @@
                             </div>
                         </li>
                         <li><a class="image_thumb_zoom" href="#" title="Permalink to Phasellus scelerisque massa molestie iaculis lectus pulvinar" rel="bookmark">
-                                <img width="225" height="136" src="images/dummy/shutterstock_109209743-225x136.jpg" class="attachment-post-thumbnail wp-post-image" alt="shutterstock_109209743" />
+                                <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_109209743-225x136.jpg';?>" class="attachment-post-thumbnail wp-post-image" alt="shutterstock_109209743" />
                             </a>
                             <h4 class="post-title clearfix">
-                                <img class="post-icon" alt="Video post" src="images/vid.png">
+                                <img class="post-icon" alt="Video post" src="<?php echo get_template_directory_uri().'/images/vid.png';?>">
                                 <a href="#" title="Permalink to Phasellus scelerisque massa molestie iaculis lectus pulvinar" rel="bookmark">Phasellus scelerisque massa molesti...	</a>
                             </h4>
                             <div class="meta clearfix">
@@ -370,7 +370,7 @@
                         <div class="row-fluid">
                             <article class="post">
                                 <a class="image_thumb_zoom" href="#" title="Permalink to Integer vitae libero ac risus egestas placerat urna" rel="bookmark">
-                                    <img width="371" height="177" src="images/dummy/shutterstock_58382248-371x177.jpg" class="attachment-post-first wp-post-image" alt="shutterstock_58382248" />
+                                    <img width="371" height="177" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_58382248-371x177.jpg';?>" class="attachment-post-first wp-post-image" alt="shutterstock_58382248" />
                                 </a>
                                 <h4 class="post-title">
                                     <a href="#" title="Permalink to Integer vitae libero ac risus egestas placerat urna" rel="bookmark">Integer vitae libero ac risus egest...</a>
@@ -382,7 +382,7 @@
                             <article class="post">
                                 <div class="entry clearfix">
                                     <a href="#" title="Permalink to Morbi est est lectus non rutrum commodo felis quis tortor" rel="bookmark">
-                                        <img width="225" height="136" src="images/dummy/photodune-3834701-laughing-girl-xs-225x136.jpg" class="thumb" alt="photodune-3834701-laughing-girl-xs" />
+                                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3834701-laughing-girl-xs-225x136.jpg';?>" class="thumb" alt="photodune-3834701-laughing-girl-xs" />
                                         <h4 class="post-title">Morbi est est lectus non rutrum com...</h4>
                                     </a>
                                     <p>Fusce aliquet non ipsum vitae scelerisqu...</p>
@@ -395,7 +395,7 @@
                             <article class="post">
                                 <div class="entry clearfix">
                                     <a href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark">
-                                        <img width="225" height="136" src="images/dummy/photodune-2043745-college-student-s-225x136.jpg" class="thumb" alt="photodune-2043745-college-student-s" />
+                                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-225x136.jpg';?>" class="thumb" alt="photodune-2043745-college-student-s" />
                                         <h4 class="post-title">Donec consectetuer ligula vulputate...</h4>
                                     </a>
                                     <p>Nam nibh arcu, tristique eget pretium se...</p>
@@ -414,7 +414,7 @@
                         <div class="row-fluid">
                             <article class="post">
                                 <a class="image_thumb_zoom" href="#" title="Permalink to Quisque sodales viverra ornare vitae libero ac risus" rel="bookmark">
-                                    <img width="371" height="177" src="images/dummy/shutterstock_123603871-371x177.jpg" class="attachment-post-first wp-post-image" alt="gallery-1" />
+                                    <img width="371" height="177" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_123603871-371x177.jpg';?>" class="attachment-post-first wp-post-image" alt="gallery-1" />
                                 </a>
                                 <h4 class="post-title">
                                     <a href="#" title="Permalink to Quisque sodales viverra ornare vitae libero ac risus" rel="bookmark">Quisque sodales viverra ornare vita...</a>
@@ -426,7 +426,7 @@
                             <article class="post">
                                 <div class="entry clearfix">
                                     <a href="#" title="Permalink to Nam nibh arcu tristique eget pretium vitae libero ac risus" rel="bookmark">
-                                        <img width="225" height="136" src="images/dummy/photodune-3517559-idea-s-225x136.jpg" class="thumb wp-post-image" alt="photodune-3517559-idea-s" />
+                                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3517559-idea-s-225x136.jpg';?>" class="thumb wp-post-image" alt="photodune-3517559-idea-s" />
                                         <h4 class="post-title">Nam nibh arcu tristique eget pretiu...</h4>
                                     </a>
                                     <p>Nam nibh arcu, tristique eget pretium se...</p>
@@ -439,7 +439,7 @@
                             <article class="post">
                                 <div class="entry clearfix">
                                     <a href="#" title="Permalink to Vestibulum auctor dapibus neque pulvinar urna leo" rel="bookmark">
-                                        <img width="225" height="136" src="images/dummy/shutterstock_109209743-225x136.jpg" class="thumb wp-post-image" alt="shutterstock_109209743" />
+                                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_109209743-225x136.jpg';?>" class="thumb wp-post-image" alt="shutterstock_109209743" />
                                         <h4 class="post-title">Vestibulum auctor dapibus neque pul...</h4>
                                     </a>
                                     <p>Fusce aliquet non ipsum vitae scelerisqu...</p>
@@ -462,7 +462,7 @@
                         <div class="span6">
                             <article class="post">
                                 <a class="image_thumb_zoom" href="#" title="Permalink to Lectus non rutrum pulvinar urna leo dignissim lorem" rel="bookmark">
-                                    <img width="371" height="177" src="images/dummy/shutterstock_134257640-371x177.jpg" alt="shutterstock_134257640" />
+                                    <img width="371" height="177" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_134257640-371x177.jpg';?>" alt="shutterstock_134257640" />
                                 </a>
                                 <h4 class="post-title">
                                     <a href="#" title="Permalink to Lectus non rutrum pulvinar urna leo dignissim lorem" rel="bookmark">Lectus non rutrum pulvinar urna leo...</a>
@@ -476,7 +476,7 @@
                             <article class="post">
                                 <div class="entry clearfix">
                                     <a href="#" title="Permalink to Suspen disse auctor dapibus neque pulvinar urna leo" rel="bookmark">
-                                        <img width="225" height="136" src="images/dummy/shutterstock_70184773-225x136.jpg" class="thumb" alt="shutterstock_70184773" />
+                                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70184773-225x136.jpg';?>" class="thumb" alt="shutterstock_70184773" />
                                         <h4 class="post-title">Suspen disse auctor dapibus neque p...</h4>
                                     </a>
                                     <p>Fusce aliquet non ipsum vitae scelerisqu...</p>
@@ -488,7 +488,7 @@
                             <article class="post">
                                 <div class="entry clearfix">
                                     <a href="#" title="Permalink to Aenean dignissim dignissim lorem pellentesque felis risus" rel="bookmark">
-                                        <img width="225" height="136" src="images/dummy/shutterstock_58382248-225x136.jpg" class="thumb" alt="shutterstock_58382248" />
+                                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_58382248-225x136.jpg';?>" class="thumb" alt="shutterstock_58382248" />
                                         <h4 class="post-title">Aenean dignissim dignissim lorem pe...</h4>
                                     </a>
                                     <p>Fusce aliquet non ipsum vitae scelerisqu...</p>
@@ -500,7 +500,7 @@
                             <article class="post">
                                 <div class="entry clearfix">
                                     <a href="#" title="Permalink to Quisque sodales viverra ornare vitae libero ac risus" rel="bookmark">
-                                        <img width="225" height="136" src="images/dummy/shutterstock_123603871-225x136.jpg" class="thumb" alt="gallery-1" />
+                                        <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_123603871-225x136.jpg';?>" class="thumb" alt="gallery-1" />
                                         <h4 class="post-title">Quisque sodales viverra ornare vita...</h4>
                                     </a>
                                     <p>Quisque sodales viverra ornare. Aenean p...</p>
@@ -521,9 +521,9 @@
 
                 <div id="tabwidget" class="widget tab-container">
                     <ul id="tabnav" class="clearfix">
-                        <li><h3><a href="#tab1" class="selected"><img src="images/view-white-bg.png" alt="Popular">Popular</a></h3></li>
-                        <li><h3><a href="#tab2"><img src="images/time-white.png" alt="Recent">Recent</a></h3></li>
-                        <li><h3><a href="#tab3"><img src="images/komen-putih.png" alt="Comments">Comments</a></h3></li>
+                        <li><h3><a href="#tab1" class="selected"><img src="<?php echo get_template_directory_uri().'/images/view-white-bg.png';?>" alt="Popular">Popular</a></h3></li>
+                        <li><h3><a href="#tab2"><img src="<?php echo get_template_directory_uri().'/images/time-white.png';?>" alt="Recent">Recent</a></h3></li>
+                        <li><h3><a href="#tab3"><img src="<?php echo get_template_directory_uri().'/images/komen-putih.png';?>" alt="Comments">Comments</a></h3></li>
                     </ul>
 
                     <div id="tab-content">
@@ -531,55 +531,55 @@
                         <div id="tab1" style="display: block; ">
                             <ul id="itemContainer" class="recent-tab">
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_134257640-225x136.jpg" class="thumb" alt="shutterstock_134257640" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_134257640-225x136.jpg';?>" class="thumb" alt="shutterstock_134257640" /></a>
                                     <h4 class="post-title"><a href="#">Lectus non rutrum pulvinar urna...</a></h4>
                                     <p>Nam nibh arcu, tristique eget pretium sed, porta id quam. Praesent dig...</p>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/photodune-2043745-college-student-s-225x136.jpg" class="thumb" alt="photodune-2043745-college-student-s" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-225x136.jpg';?>" class="thumb" alt="photodune-2043745-college-student-s" /></a>
                                     <h4 class="post-title"><a href="#">Donec consectetuer ligula vulpu...</a></h4>
                                     <p>Nam nibh arcu, tristique eget pretium sed, porta id quam. Praesent dig...</p>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/photodune-3517559-idea-s-225x136.jpg" class="thumb" alt="photodune-3517559-idea-s" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3517559-idea-s-225x136.jpg';?>" class="thumb" alt="photodune-3517559-idea-s" /></a>
                                     <h4 class="post-title"><a href="#">Nam nibh arcu tristique eget pr...</a></h4>
                                     <p>Nam nibh arcu, tristique eget pretium sed, porta id quam. Praesent dig...</p>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_123603871-225x136.jpg" class="thumb" alt="gallery-1" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_123603871-225x136.jpg';?>" class="thumb" alt="gallery-1" /></a>
                                     <h4 class="post-title"><a href="#">Quisque sodales viverra ornare ...</a></h4>
                                     <p>Quisque sodales viverra ornare. Aenean posuere lacus sed facilisis gra...</p>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/photodune-3834701-laughing-girl-xs-225x136.jpg" class="thumb" alt="photodune-3834701-laughing-girl-xs" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3834701-laughing-girl-xs-225x136.jpg';?>" class="thumb" alt="photodune-3834701-laughing-girl-xs" /></a>
                                     <h4 class="post-title"><a href="#">Morbi est est lectus non rutrum...</a></h4>
                                     <p>Fusce aliquet non ipsum vitae scelerisque. Nullam ultricies adipiscing...</p>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_2114081-225x136.jpg" class="thumb" alt="shutterstock_2114081" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_2114081-225x136.jpg';?>" class="thumb" alt="shutterstock_2114081" /></a>
                                     <h4 class="post-title"><a href="#">Aliquam quam lectus pulvinar ur...</a></h4>
                                     <p>Fusce aliquet non ipsum vitae scelerisque. Nullam ultricies adipiscing...</p>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_70184773-225x136.jpg" class="thumb" alt="shutterstock_70184773" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70184773-225x136.jpg';?>" class="thumb" alt="shutterstock_70184773" /></a>
                                     <h4 class="post-title"><a href="#">Suspen disse auctor dapibus neq...</a></h4>
                                     <p>Fusce aliquet non ipsum vitae scelerisque. Nullam ultricies adipiscing...</p>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_70787161-225x136.jpg" class="thumb" alt="shutterstock_70787161" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70787161-225x136.jpg';?>" class="thumb" alt="shutterstock_70787161" /></a>
                                     <h4 class="post-title"><a href="#">Porta lorem ipsum dolor sit ame...</a></h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer place...</p>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_58382248-225x136.jpg" class="thumb" alt="shutterstock_58382248" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_58382248-225x136.jpg';?>" class="thumb" alt="shutterstock_58382248" /></a>
                                     <h4 class="post-title"><a href="#">Integer vitae libero ac risus e...</a></h4>
                                     <p>Fusce aliquet non ipsum vitae scelerisque. Nullam ultricies adipiscing...</p>
                                     <div class="clearfix"></div>
@@ -611,19 +611,19 @@
                         <div id="tab2" style="display: none;">
                             <ul id="itemContainer2" class="recent-tab">
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_134257640-225x136.jpg" class="thumb" alt="shutterstock_134257640" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_134257640-225x136.jpg';?>" class="thumb" alt="shutterstock_134257640" /></a>
                                     <h4 class="post-title"><a href="http://magazine.themedesigner.in/lectus-non-rutrum-pulvinar-urna-leo-dignissim-lorem-8/">Lectus non rutrum pulvinar urna...</a></h4>
                                     <p>Nam nibh arcu, tristique eget pretium sed, porta id quam. Praesent dig...</p>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_70184773-225x136.jpg" class="thumb" alt="shutterstock_70184773" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70184773-225x136.jpg';?>" class="thumb" alt="shutterstock_70184773" /></a>
                                     <h4 class="post-title"><a href="#">Suspen disse auctor dapibus neq...</a></h4>
                                     <p>Fusce aliquet non ipsum vitae scelerisque. Nullam ultricies adipiscing...</p>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li>
-                                    <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_70787161-225x136.jpg" class="thumb" alt="shutterstock_70787161" /></a>
+                                    <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70787161-225x136.jpg';?>" class="thumb" alt="shutterstock_70787161" /></a>
                                     <h4 class="post-title"><a href="#">Porta lorem ipsum dolor sit ame...</a></h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer place...</p>
                                     <div class="clearfix"></div>
@@ -648,7 +648,7 @@
                     <h3 class="title"><span>Recent Posts</span></h3>
                     <div class="latest-posts widget">
                         <div class="latest-post clearfix">
-                            <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_134257640-225x136.jpg" class="thumb fl" alt="shutterstock_134257640" title="" /></a>
+                            <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_134257640-225x136.jpg';?>" class="thumb fl" alt="shutterstock_134257640" title="" /></a>
                             <h4><a href="#" rel="bookmark" title="Lectus non rutrum pulvinar urna leo dignissim lorem">Lectus non rutrum pulvinar urna leo</a></h4>
                             <div class="post-time">August 12, 2013</div>
                             <div class="ratings" style="float: none">
@@ -661,7 +661,7 @@
                         </div>
 
                         <div class="latest-post clearfix">
-                            <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_70184773-225x136.jpg" class="thumb fl" alt="shutterstock_70184773" title="" /></a>
+                            <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70184773-225x136.jpg';?>" class="thumb fl" alt="shutterstock_70184773" title="" /></a>
                             <h4><a href="#" rel="bookmark" title="Suspen disse auctor dapibus neque pulvinar urna leo">Suspen disse auctor dapibus neque</a></h4>
                             <div class="post-time">August 11, 2013</div>
                             <div class="ratings" style="float: none">
@@ -674,7 +674,7 @@
                         </div>
 
                         <div class="latest-post clearfix">
-                            <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_70787161-225x136.jpg" class="thumb fl" alt="shutterstock_70787161" title="" /></a>
+                            <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70787161-225x136.jpg';?>" class="thumb fl" alt="shutterstock_70787161" title="" /></a>
                             <h4><a href="#" rel="bookmark" title="Porta lorem ipsum dolor sit amet, consectetur adipiscing risus">Porta lorem ipsum dolor sit amet</a></h4>
                             <div class="post-time">August 2, 2013</div>
                             <div class="ratings" style="float: none">
@@ -693,7 +693,7 @@
                     <div class="latest-posts">
                         <article class="post">
                             <a class="image_thumb_zoom" href="#" title="Permalink to Porta lorem ipsum dolor sit amet, consectetur adipiscing risus" rel="bookmark">
-                                <img width="371" height="177" src="images/dummy/shutterstock_70787161-371x177.jpg" class="attachment-post-first wp-post-image" alt="shutterstock_70787161" />
+                                <img width="371" height="177" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70787161-371x177.jpg';?>" class="attachment-post-first wp-post-image" alt="shutterstock_70787161" />
                             </a>
                             <h4 class="post-title">
                                 <a href="#" title="Permalink to Porta lorem ipsum dolor sit amet, consectetur adipiscing risus" rel="bookmark">Porta lorem ipsum dolor sit amet, c...</a>
@@ -705,7 +705,7 @@
                         <article class="post">
                             <div class="entry clearfix">
                                 <a href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark">
-                                    <img width="225" height="136" src="images/dummy/photodune-2043745-college-student-s-225x136.jpg" class="thumb" alt="photodune-2043745-college-student-s" />
+                                    <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-225x136.jpg';?>" class="thumb" alt="photodune-2043745-college-student-s" />
                                     <h4 class="post-title">Donec consectetuer ligula vulputate...</h4>
                                 </a>
                                 <p>Nam nibh arcu, tristique eget pretium se...</p>
@@ -718,7 +718,7 @@
                         <article class="post">
                             <div class="entry clearfix">
                                 <a href="#" title="Permalink to Quisque sodales viverra ornare vitae libero ac risus" rel="bookmark">
-                                    <img width="225" height="136" src="images/dummy/shutterstock_123603871-225x136.jpg" class="thumb" alt="gallery-1" />
+                                    <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_123603871-225x136.jpg';?>" class="thumb" alt="gallery-1" />
                                     <h4 class="post-title">Quisque sodales viverra ornare vita...</h4></a>
                                 <p>Quisque sodales viverra ornare. Aenean p...</p>
                                 <div class="meta">
@@ -735,25 +735,25 @@
                     <ul>
                         <li>
                             <a href="#" title="Permalink to Lectus non rutrum pulvinar urna leo dignissim lorem" rel="bookmark">
-                                <img width="225" height="136" src="images/dummy/shutterstock_134257640-225x136.jpg" alt="shutterstock_134257640" />
+                                <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_134257640-225x136.jpg';?>" alt="shutterstock_134257640" />
                             </a>
                         </li>
 
                         <li>
                             <a href="#" title="Permalink to Vestibulum volutpat tortor libero sodales leo mauris ut lectus" rel="bookmark">
-                                <img width="225" height="136" src="images/dummy/photodune-3517559-idea-s-225x136.jpg" alt="photodune-3517559-idea-s" />
+                                <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3517559-idea-s-225x136.jpg';?>" alt="photodune-3517559-idea-s" />
                             </a>
                         </li>
 
                         <li>
                             <a href="#" title="Permalink to Vivamus ultrices luctus nunc sem sit amet interdum consectetuer" rel="bookmark">
-                                <img width="225" height="136" src="images/dummy/photodune-2043745-college-student-s-225x136.jpg" alt="photodune-2043745-college-student-s" />
+                                <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-225x136.jpg';?>" alt="photodune-2043745-college-student-s" />
                             </a>
                         </li>
 
                         <li>
                             <a href="#" title="Permalink to Phasellus scelerisque massa molestie iaculis lectus pulvinar" rel="bookmark">
-                                <img width="225" height="136" src="images/dummy/shutterstock_109209743-225x136.jpg" alt="shutterstock_109209743" />
+                                <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_109209743-225x136.jpg';?>" alt="shutterstock_109209743" />
                             </a>
                         </li>
                     </ul>
@@ -768,10 +768,10 @@
                 <ul class="gallery">
                     <li>
                         <a class="image_thumb_zoom" href="#" title="Permalink to Fusce pellentesque suscipit nibh massa porta molestie iaculis" rel="bookmark">
-                            <img width="225" height="136" src="images/dummy/shutterstock_58382248-225x136.jpg" alt="shutterstock_58382248" />
+                            <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_58382248-225x136.jpg';?>" alt="shutterstock_58382248" />
                         </a>
                         <a href="#" title="Permalink to Fusce pellentesque suscipit nibh massa porta molestie iaculis" rel="bookmark">
-                            <h4 class="post-title clearfix"><img class="post-icon" alt="Text post" src="images/text.png"> Fusce pellentesque suscipit nibh ma...</h4></a>
+                            <h4 class="post-title clearfix"><img class="post-icon" alt="Text post" src="<?php echo get_template_directory_uri().'/images/text.png';?>"> Fusce pellentesque suscipit nibh ma...</h4></a>
                         <div class="meta clearfix">
                             <span class="date">July 30, 2013</span>
                         </div>
@@ -779,10 +779,10 @@
 
                     <li>
                         <a class="image_thumb_zoom" href="#" title="Permalink to Praesent placerat risus quis pellentesque suscipit nibh ultricies nulla" rel="bookmark">
-                            <img width="225" height="136" src="images/dummy/shutterstock_70184773-225x136.jpg" alt="shutterstock_70184773" />
+                            <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70184773-225x136.jpg';?>" alt="shutterstock_70184773" />
                         </a>
                         <a href="#" title="Permalink to Praesent placerat risus quis pellentesque suscipit nibh ultricies nulla" rel="bookmark">
-                            <h4 class="post-title clearfix"><img class="post-icon" alt="Gallery post" src="images/image.png"> Praesent placerat risus quis pellen...</h4>
+                            <h4 class="post-title clearfix"><img class="post-icon" alt="Gallery post" src="<?php echo get_template_directory_uri().'/images/image.png';?>"> Praesent placerat risus quis pellen...</h4>
                         </a>
                         <div class="meta clearfix">
                             <span class="date">July 30, 2013</span>
@@ -791,10 +791,10 @@
 
                     <li>
                         <a class="image_thumb_zoom" href="#" title="Permalink to Integer malesuada commodo nulla ligula vulputate sem tristique" rel="bookmark">
-                            <img width="225" height="136" src="images/dummy/shutterstock_109209743-225x136.jpg" alt="shutterstock_109209743" />
+                            <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_109209743-225x136.jpg';?>" alt="shutterstock_109209743" />
                         </a>
                         <a href="#" title="Permalink to Integer malesuada commodo nulla ligula vulputate sem tristique" rel="bookmark">
-                            <h4 class="post-title clearfix"><img class="post-icon" alt="Photo" src="images/photo.png"> Integer malesuada commodo nulla lig...</h4>
+                            <h4 class="post-title clearfix"><img class="post-icon" alt="Photo" src="<?php echo get_template_directory_uri().'/images/photo.png';?>"> Integer malesuada commodo nulla lig...</h4>
                         </a>
                         <div class="meta clearfix">
                             <span class="date">July 30, 2013</span>
@@ -803,10 +803,10 @@
 
                     <li>
                         <a class="image_thumb_zoom" href="#" title="Permalink to Vestibulum volutpat tortor libero sodales leo mauris ut lectus" rel="bookmark">
-                            <img width="225" height="136" src="images/dummy/photodune-3517559-idea-s-225x136.jpg" alt="photodune-3517559-idea-s" />
+                            <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3517559-idea-s-225x136.jpg';?>" alt="photodune-3517559-idea-s" />
                         </a>
                         <a href="#" title="Permalink to Vestibulum volutpat tortor libero sodales leo mauris ut lectus" rel="bookmark">
-                            <h4 class="post-title clearfix"><img class="post-icon" alt="Video post" src="images/vid.png"> Vestibulum volutpat tortor libero s...</h4>
+                            <h4 class="post-title clearfix"><img class="post-icon" alt="Video post" src="<?php echo get_template_directory_uri().'/images/vid.png';?>"> Vestibulum volutpat tortor libero s...</h4>
                         </a>
                         <div class="meta clearfix">
                             <span class="date">July 30, 2013</span>
@@ -815,10 +815,10 @@
 
                     <li>
                         <a class="image_thumb_zoom" href="#" title="Permalink to Fusce accumsan mollis eros amet interdum consectetuer" rel="bookmark">
-                            <img width="225" height="136" src="images/dummy/shutterstock_2114081-225x136.jpg" alt="shutterstock_2114081" />
+                            <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_2114081-225x136.jpg';?>" alt="shutterstock_2114081" />
                         </a>
                         <a href="#" title="Permalink to Fusce accumsan mollis eros amet interdum consectetuer" rel="bookmark">
-                            <h4 class="post-title clearfix"><img class="post-icon" alt="Text post" src="images/text.png"> Fusce accumsan mollis eros amet int...</h4>
+                            <h4 class="post-title clearfix"><img class="post-icon" alt="Text post" src="<?php echo get_template_directory_uri().'/images/text.png';?>"> Fusce accumsan mollis eros amet int...</h4>
                         </a>
                         <div class="meta clearfix">
                             <span class="date">July 30, 2013</span>
@@ -827,10 +827,10 @@
 
                     <li>
                         <a class="image_thumb_zoom" href="#" title="Permalink to Quisque fermentum penatibus et magnis dis parturient montes" rel="bookmark">
-                            <img width="225" height="136" src="images/dummy/shutterstock_58382248-225x136.jpg" alt="shutterstock_58382248" />
+                            <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_58382248-225x136.jpg';?>" alt="shutterstock_58382248" />
                         </a>
                         <a href="#" title="Permalink to Quisque fermentum penatibus et magnis dis parturient montes" rel="bookmark">
-                            <h4 class="post-title clearfix"><img class="post-icon" alt="Gallery post" src="images/image.png"> Quisque fermentum penatibus et magn...</h4>
+                            <h4 class="post-title clearfix"><img class="post-icon" alt="Gallery post" src="<?php echo get_template_directory_uri().'/images/image.png';?>"> Quisque fermentum penatibus et magn...</h4>
                         </a>
                         <div class="meta clearfix">
                             <span class="date">July 30, 2013</span>
@@ -839,10 +839,10 @@
 
                     <li>
                         <a class="image_thumb_zoom" href="#" title="Permalink to Proin malesuada adipiscing lacus imperdiet nibh feugiat" rel="bookmark">
-                            <img width="225" height="136" src="images/dummy/shutterstock_134257640-225x136.jpg" alt="shutterstock_134257640" />
+                            <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_134257640-225x136.jpg';?>" alt="shutterstock_134257640" />
                         </a>
                         <a href="#" title="Permalink to Proin malesuada adipiscing lacus imperdiet nibh feugiat" rel="bookmark">
-                            <h4 class="post-title clearfix"><img class="post-icon" alt="Photo" src="images/photo.png"> Proin malesuada adipiscing lacus im...</h4>
+                            <h4 class="post-title clearfix"><img class="post-icon" alt="Photo" src="<?php echo get_template_directory_uri().'/images/photo.png';?>"> Proin malesuada adipiscing lacus im...</h4>
                         </a>
                         <div class="meta clearfix">
                             <span class="date">July 30, 2013</span>
@@ -851,10 +851,10 @@
 
                     <li>
                         <a class="image_thumb_zoom" href="#" title="Permalink to Vivamus ultrices luctus nunc sem sit amet interdum consectetuer" rel="bookmark">
-                            <img width="225" height="136" src="images/dummy/photodune-2043745-college-student-s-225x136.jpg" alt="photodune-2043745-college-student-s" />
+                            <img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-225x136.jpg';?>" alt="photodune-2043745-college-student-s" />
                         </a>
                         <a href="#" title="Permalink to Vivamus ultrices luctus nunc sem sit amet interdum consectetuer" rel="bookmark">
-                            <h4 class="post-title clearfix"><img class="post-icon" alt="Video post" src="images/vid.png"> Vivamus ultrices luctus nunc sem si...</h4>
+                            <h4 class="post-title clearfix"><img class="post-icon" alt="Video post" src="<?php echo get_template_directory_uri().'/images/vid.png';?>"> Vivamus ultrices luctus nunc sem si...</h4>
                         </a>
                         <div class="meta clearfix">
                             <span class="date">July 18, 2013</span>
@@ -874,7 +874,7 @@
                     <h3 class="title"><span>Latest News</span></h3>
                     <div class="latest-posts widget">
                         <div class="latest-post clearfix">
-                            <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_134257640-225x136.jpg" class="thumb fl" alt="shutterstock_134257640" title="" /></a>
+                            <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_134257640-225x136.jpg';?>" class="thumb fl" alt="shutterstock_134257640" title="" /></a>
                             <h4><a href="#" rel="bookmark" title="Lectus non rutrum pulvinar urna leo dignissim lorem">Lectus non rutrum pulvinar urna leo...</a></h4>
                             <div class="post-time">August 12, 2013</div>
                             <div class="ratings" style="float: none">
@@ -887,7 +887,7 @@
                         </div>
 
                         <div class="latest-post clearfix">
-                            <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_70184773-225x136.jpg" class="thumb fl" alt="shutterstock_70184773" title="" /></a>
+                            <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70184773-225x136.jpg';?>" class="thumb fl" alt="shutterstock_70184773" title="" /></a>
                             <h4><a href="#" rel="bookmark" title="Suspen disse auctor dapibus neque pulvinar urna leo">Suspen disse auctor dapibus neque p...</a></h4>
                             <div class="post-time">August 11, 2013</div>
                             <div class="ratings" style="float: none">
@@ -900,7 +900,7 @@
                         </div>
 
                         <div class="latest-post clearfix">
-                            <a href="#"><img width="225" height="136" src="images/dummy/shutterstock_70787161-225x136.jpg" class="thumb fl" alt="shutterstock_70787161" title="" /></a>
+                            <a href="#"><img width="225" height="136" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_70787161-225x136.jpg';?>" class="thumb fl" alt="shutterstock_70787161" title="" /></a>
                             <h4><a href="#" rel="bookmark" title="Porta lorem ipsum dolor sit amet, consectetur adipiscing risus">Porta lorem ipsum dolor sit amet, c...</a></h4>
                             <div class="post-time">August 2, 2013</div>
                             <div class="ratings" style="float: none">
@@ -919,12 +919,12 @@
                 <div class="widget">
                     <h3 class="title"><span>Latest Tweets</span></h3>
                     <div class="magz-twitter-tweet">
-                        <a href="http://twitter.com/envato"><img class="twit-pic" src="images/dummy/envato.png" alt=""></a>
+                        <a href="http://twitter.com/envato"><img class="twit-pic" src="<?php echo get_template_directory_uri().'/images/dummy/envato.png';?>" alt=""></a>
                         <div class="twit-entry">&quot;RT <a href="http://twitter.com/SayersM">@SayersM</a> "Envato is here <a href="http://twitter.com/#!/search?q=%23YOW13">#YOW13</a>! http://t.co/FqARi13BlN" <a href="http://twitter.com/#!/search?q=%23lanyardlife">#lanyardlife</a>&quot;<div class="magz-twitter-tweet-time" id="magz-twitter-tweet-time-1">4 hours ago</div></div>
                         <div class="clearfix"></div>
                     </div>
                     <div class="magz-twitter-tweet">
-                        <a href="http://twitter.com/envato"><img class="twit-pic" src="http://magazine.themedesigner.in/wp-content/themes/magazine/includes/assets/magz-twitter-sidebar-widget/envato.png" alt=""></a><div class="twit-entry">&quot;RT <a href="http://twitter.com/MicrolancerBeta">@MicrolancerBeta</a>: Want a cool t-shirt? Of course you do! We're giving away Microlancer t-shirts while stocks last. Learn more: http://t.â€¦&quot;<div class="magz-twitter-tweet-time" id="magz-twitter-tweet-time-2">4 hours ago</div></div>
+                        <a href="http://twitter.com/envato"><img class="twit-pic" src="<?php echo get_template_directory_uri().'/images/dummy/envato.png';?>" alt=""></a><div class="twit-entry">&quot;RT <a href="http://twitter.com/MicrolancerBeta">@MicrolancerBeta</a>: Want a cool t-shirt? Of course you do! We're giving away Microlancer t-shirts while stocks last. Learn more: http://t.â€¦&quot;<div class="magz-twitter-tweet-time" id="magz-twitter-tweet-time-2">4 hours ago</div></div>
                         <div class="clearfix"></div>
                     </div>
 
@@ -955,17 +955,17 @@
                     <div class="socmed clearfix">
                         <ul>
                             <li>
-                                <a href="#"><img src="images/rss-icon.png" alt=""></a>
+                                <a href="#"><img src="<?php echo get_template_directory_uri().'/images/rss-icon.png';?>" alt=""></a>
                                 <h4>RSS</h4>
                                 <p>Subscribe</p>
                             </li>
                             <li>
-                                <a href="#"><img src="images/twitter-icon.png" alt=""></a>
+                                <a href="#"><img src="<?php echo get_template_directory_uri().'/images/twitter-icon.png';?>" alt=""></a>
                                 <h4>37005</h4>
                                 <p>Followers</p>
                             </li>
                             <li>
-                                <a href="#"><img src="images/fb-icon.png" alt=""></a>
+                                <a href="#"><img src="<?php echo get_template_directory_uri().'/images/fb-icon.png';?>" alt=""></a>
                                 <h4>109</h4>
                                 <p>Fans</p>
                             </li>
@@ -975,7 +975,7 @@
             </div>
 
             <div class="footer-widget span6 block5">
-                <img class="footer-logo" src="images/footer-logo.png" alt="Magazine">
+                <img class="footer-logo" src="<?php echo get_template_directory_uri().'/images/footer-logo.png';?>" alt="Magazine">
                 <div class="footer-text">
                     <h4>About Magazine</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididu... </p>
