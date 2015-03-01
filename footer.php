@@ -1,5 +1,3 @@
-
-
 <footer id="footer" class="row-fluid">
         <div id="footer-widgets" class="container">
             <div class="footer-widget span3 block1">

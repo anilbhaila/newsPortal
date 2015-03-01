@@ -30,7 +30,8 @@
     <link rel='stylesheet' id='simplyscroll-css'  href='<?php echo get_template_directory_uri().'/css/jquery.simplyscroll.css'; ?>' type='text/css' media='all' />
     <link rel='stylesheet' id='jPages-css'  href='<?php echo get_template_directory_uri().'/css/jPages.css'; ?>' type='text/css' media='all' />
     <link rel='stylesheet' id='rating-css'  href='<?php echo get_template_directory_uri().'/css/jquery.rating.css'; ?>' type='text/css' media='all' />
-    <link rel='stylesheet' id='ie-styles-css'  href='<?php echo get_template_directory_uri().'/css/ie.css'; ?>' type='text/css' media='all' />
+    <link rel='stylesheet' id='post-ratings-css'  href='<?php echo get_template_directory_uri().'/css/post-ratings.css';?> type='text/css' media='all' />
+	<link rel='stylesheet' id='ie-styles-css'  href='<?php echo get_template_directory_uri().'/css/ie.css'; ?>' type='text/css' media='all' />
     <link rel='stylesheet' id='Roboto-css'  href='http://fonts.googleapis.com/css?family=Roboto' type='text/css' media='all' />
 
     <script type='text/javascript' src='<?php echo get_template_directory_uri().'/js/jquery-1.10.2.min.js'; ?>'></script>
@@ -47,6 +48,7 @@
     <script type='text/javascript' src='<?php echo get_template_directory_uri().'/js/jPages.js'; ?>'></script>
     <script type='text/javascript' src='<?php echo get_template_directory_uri().'/js/jquery.sidr.min.js'; ?>'></script>
     <script type='text/javascript' src='<?php echo get_template_directory_uri().'/js/jquery.touchSwipe.min.js'; ?>'></script>
+    <script type='text/javascript' src='<?php echo get_template_directory_uri().'/js/post-ratings.js'; ?>'></script>
     <script type='text/javascript' src='<?php echo get_template_directory_uri().'/js/custom.js'; ?>'></script>
 
     <!-- END -->
