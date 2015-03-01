@@ -155,10 +155,17 @@
             $args = array();
             $myposts = get_posts($args);
             $count = 0;
+            $techPulled = false;
+            $sportPulled = false;
+            $politicsPulled = false;
+            $fashionPulled = false;
             foreach($myposts as $post):setup_postdata($post);
-                if($count > 4) break;
+                if($count == 4) {
+                    break;
+                }
                 $cat = get_the_category($post->ID);
-                if($cat[0]->cat_name === 'technology'){
+                if($cat[0]->cat_name === 'technology' && !$techPulled){
+                    $techPulled = true;
                     ?>
             <div class="span3">
                 <article class="post">
@@ -182,7 +189,8 @@
         </article>
     </div><?php
                 }
-                if($cat[0]->cat_name === 'fashion'){
+                if($cat[0]->cat_name === 'fashion' && !$fashionPulled){
+                    $fashionPulled = true;
                     ?>
                     <div class="span3">
                         <article class="post">
@@ -211,7 +219,8 @@
                 <?php
 
                 }
-                if($cat[0]->cat_name === 'politics'){
+                if($cat[0]->cat_name === 'politics' && !$politicsPulled){
+                    $politicsPulled = true;
                     ?>
 
                     <div class="span3">
@@ -238,9 +247,9 @@
 
                     <?php
 
-
                 }
-                if($cat[0]->cat_name === 'sports'){
+                if($cat[0]->cat_name === 'sports' && !$sportPulled){
+                    $sportPulled = true;
                     ?>
                     <div class="span3">
                         <article class="post">
