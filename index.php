@@ -25,45 +25,45 @@
                         wp_reset_query();
                         ?>
 
-                            <li data-thumb="<?php echo get_template_directory_uri().'/images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg';?>">
+                            <!--<li data-thumb="<?php /*echo get_template_directory_uri().'/images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg';*/?>">
                                 <a href="#" title="Permalink to Morbi est est lectus non rutrum commodo felis quis tortor" rel="bookmark">
-                                    <img width="546" height="291" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg';?>" alt="photodune-3834701-laughing-girl-xs" />
+                                    <img width="546" height="291" src="<?php /*echo get_template_directory_uri().'/images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg';*/?>" alt="photodune-3834701-laughing-girl-xs" />
                                 </a>
                                 <div class="entry">
                                     <h4>Morbi est est lectus non rutrum commodo felis quis tortor...</h4>
                                     <p>Fusce aliquet non ipsum vitae scelerisque. Nullam ultricies adipiscing erat, qui...</p>
                                 </div>
-                            </li>
+                            </li>-->
 
-                            <li data-thumb="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-546x291.jpg';?>">
+                            <!--<li data-thumb="<?php /*echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-546x291.jpg';*/?>">
                                 <a href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark">
-                                    <img width="546" height="291" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-546x291.jpg';?>" alt="photodune-2043745-college-student-s" />
+                                    <img width="546" height="291" src="<?php /*echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-546x291.jpg';*/?>" alt="photodune-2043745-college-student-s" />
                                 </a>
                                 <div class="entry">
                                     <h4>Donec consectetuer ligula vulputate sem tristique cursus...</h4>
                                     <p>Nam nibh arcu, tristique eget pretium sed, porta id quam. Praesent dignissim ant...</p>
                                 </div>
-                            </li>
+                            </li>-->
 
-                            <li data-thumb="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_123603871-546x291.jpg';?>">
+                            <!--<li data-thumb="<?php /*echo get_template_directory_uri().'/images/dummy/shutterstock_123603871-546x291.jpg';*/?>">
                                 <a href="#" title="Permalink to Quisque sodales viverra ornare vitae libero ac risus" rel="bookmark">
-                                    <img width="546" height="291" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_123603871-546x291.jpg';?>" alt="gallery-1" />
+                                    <img width="546" height="291" src="<?php /*echo get_template_directory_uri().'/images/dummy/shutterstock_123603871-546x291.jpg';*/?>" alt="gallery-1" />
                                 </a>
                                 <div class="entry">
                                     <h4>Quisque sodales viverra ornare vitae libero ac risus...</h4>
                                     <p>Quisque sodales viverra ornare. Aenean posuere lacus sed facilisis gravida. Morb...</p>
                                 </div>
-                            </li>
+                            </li>-->
 
-                            <li data-thumb="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_109209743-546x291.jpg';?>">
+                            <!--<li data-thumb="<?php /*echo get_template_directory_uri().'/images/dummy/shutterstock_109209743-546x291.jpg';*/?>">
                                 <a href="#" title="Permalink to Vestibulum auctor dapibus neque pulvinar urna leo" rel="bookmark">
-                                    <img width="546" height="291" src="<?php echo get_template_directory_uri().'/images/dummy/shutterstock_109209743-546x291.jpg';?>" alt="shutterstock_109209743" />
+                                    <img width="546" height="291" src="<?php /*echo get_template_directory_uri().'/images/dummy/shutterstock_109209743-546x291.jpg';*/?>" alt="shutterstock_109209743" />
                                 </a>
                                 <div class="entry">
                                     <h4>Vestibulum auctor dapibus neque pulvinar urna leo...</h4>
                                     <p>Fusce aliquet non ipsum vitae scelerisque. Nullam ultricies adipiscing erat, qui...</p>
                                 </div>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
 
