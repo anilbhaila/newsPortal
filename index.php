@@ -21,8 +21,7 @@
                             <?php
                             }
                         endwhile;
-                        wp_reset_postdata();
-                        wp_reset_query();
+
                         ?>
 
                             <!--<li data-thumb="<?php /*echo get_template_directory_uri().'/images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg';*/?>">
@@ -70,10 +69,20 @@
                     <div id="slide-right" class="span4">
                         <h3>Most Popular News</h3>
                         <ul>
-                            <li><a href="#" title="Permalink to Lectus non rutrum pulvinar urna leo dignissim lorem" rel="bookmark"><h4 class="post-title">Lectus non rutrum pulvinar urna leo dignissim lore...</h4></a></li>
-                            <li><a href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark"><h4 class="post-title">Donec consectetuer ligula vulputate sem tristique ...</h4></a></li>
-                            <li><a href="#" title="Permalink to Quisque sodales viverra ornare vitae libero ac risus" rel="bookmark"><h4 class="post-title">Quisque sodales viverra ornare vitae libero ac ris...</h4></a></li>
-                            <li><a href="#" title="Permalink to Nam nibh arcu tristique eget pretium vitae libero ac risus" rel="bookmark"><h4 class="post-title">Nam nibh arcu tristique eget pretium vitae libero ...</h4></a></li>
+                        <?php query_posts('category_name=Most Popular News & posts_per_page=4');
+                        while(have_posts()):the_post();?>
+                            <li><a href="<?php the_permalink();?>" rel="bookmark"><h4 class="post-title"><?php the_title();?></h4></a></li>
+
+                        <?php
+                        endwhile;
+                        wp_reset_postdata();
+                        wp_reset_query();
+                        ?>
+
+<!--                            <li><a href="#" title="Permalink to Lectus non rutrum pulvinar urna leo dignissim lorem" rel="bookmark"><h4 class="post-title">Lectus non rutrum pulvinar urna leo dignissim lore...</h4></a></li>-->
+<!--                            <li><a href="#" title="Permalink to Donec consectetuer ligula vulputate sem tristique cursus" rel="bookmark"><h4 class="post-title">Donec consectetuer ligula vulputate sem tristique ...</h4></a></li>-->
+<!--                            <li><a href="#" title="Permalink to Quisque sodales viverra ornare vitae libero ac risus" rel="bookmark"><h4 class="post-title">Quisque sodales viverra ornare vitae libero ac ris...</h4></a></li>-->
+<!--                            <li><a href="#" title="Permalink to Nam nibh arcu tristique eget pretium vitae libero ac risus" rel="bookmark"><h4 class="post-title">Nam nibh arcu tristique eget pretium vitae libero ...</h4></a></li>-->
                         </ul><div class="clear"></div>
                     </div>
                 </div>

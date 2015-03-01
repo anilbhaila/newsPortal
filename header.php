@@ -259,8 +259,6 @@
 
                     <?php                
             endwhile;
-//            wp_reset_query();
-            wp_reset_postdata();
             ?>
 
 
@@ -325,20 +323,18 @@
             <div class="brnews span9">
                 <h3>Breaking News</h3>
 				<ul id="scroller">
-				<?php 
-				$args = array('category_name' => 'Breaking News' );
-
-				$myposts = get_posts( $args );
-				foreach ( $myposts as $post ) : setup_postdata( $post ); 
+				<?php
+                query_posts('category_name=Breaking News & posts_per_page=5');
+				while(have_posts()):the_post();
 				?>
 				<li><p>
 					<a href="<?php the_permalink(); ?>">
 					<span class="title"><?php the_title(); ?></span>
-					<?php the_content(); echo "the content";?>
+					<?php echo get_the_content(); echo "the content";?>
 					</a>
 					</p>
 				</li>
-				<?php endforeach;
+				<?php endwhile;
 					wp_reset_postdata();
                     wp_reset_query();
 				?>
