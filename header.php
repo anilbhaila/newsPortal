@@ -152,7 +152,7 @@
 	<div id="headline" class="container">
         <div class="row-fluid">
             <?php
-			$temp_query = $wp_query;
+//			$temp_query = $wp_query;
 			query_posts('category_name=sports & posts_per_page=1');     
             while(have_posts()):the_post();                
                 $cat = get_the_category($post->ID);                
@@ -260,6 +260,7 @@
 
                     <?php                
             endwhile;
+//            wp_reset_query();
             wp_reset_postdata();
             ?>
 
@@ -338,8 +339,9 @@
 					</a>
 					</p>
 				</li>
-				<?php endforeach; 
+				<?php endforeach;
 					wp_reset_postdata();
+                    wp_reset_query();
 				?>
                 </ul>
             </div>
@@ -354,4 +356,4 @@
     </div>
 	<div id="content" class="container">
 		<div id="main" class="row-fluid">
-<?php $wp_query = $temp_query; ?>
+<?php //$wp_query = $temp_query; ?>

@@ -3,6 +3,28 @@
                 <div id="slider" class="clearfix">
                     <div id="slide-left" class="flexslider span8">
                         <ul class="slides">
+                        <?php
+                        query_posts('category_name=Photo News & posts_per_page=4');
+                        while(have_posts()):the_post();
+                            if(has_post_thumbnail()){
+                                $imageUrl = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'photo-news' );
+                                ?>
+                                <li data-thumb="<?php echo $imageUrl[0];?>">
+                                <a href="<?php the_permalink();?>" title="<?php the_title();?>" rel="bookmark">
+                                    <?php the_post_thumbnail("photo-news");?>
+                                </a>
+                                <div class="entry">
+                                    <h4><?php the_title();?></h4>
+                                    <p><?php echo get_the_excerpt();?></p>
+                                </div>
+                            </li>
+                            <?php
+                            }
+                        endwhile;
+                        wp_reset_postdata();
+                        wp_reset_query();
+                        ?>
+
                             <li data-thumb="<?php echo get_template_directory_uri().'/images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg';?>">
                                 <a href="#" title="Permalink to Morbi est est lectus non rutrum commodo felis quis tortor" rel="bookmark">
                                     <img width="546" height="291" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-3834701-laughing-girl-xs-546x291.jpg';?>" alt="photodune-3834701-laughing-girl-xs" />
