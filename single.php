@@ -1,6 +1,7 @@
 <?php 
-	get_header();
+	get_header();	
 ?>	
+
 		<div id="main-left" class="span8">
 <?php
 if (have_posts()):

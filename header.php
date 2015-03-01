@@ -152,20 +152,10 @@
 	<div id="headline" class="container">
         <div class="row-fluid">
             <?php
-            $args = array();
-            $myposts = get_posts($args);
-            $count = 0;
-            $techPulled = false;
-            $sportPulled = false;
-            $politicsPulled = false;
-            $fashionPulled = false;
-            foreach($myposts as $post):setup_postdata($post);
-                if($count == 4) {
-                    break;
-                }
-                $cat = get_the_category($post->ID);
-                if($cat[0]->cat_name === 'technology' && !$techPulled){
-                    $techPulled = true;
+			$temp_query = $wp_query;
+			query_posts('category_name=sports & posts_per_page=1');     
+            while(have_posts()):the_post();                
+                $cat = get_the_category($post->ID);                
                     ?>
             <div class="span3">
                 <article class="post">
@@ -180,7 +170,6 @@
                         <h3><a href="<?php the_permalink();?>" title="<?php the_title();?>" rel="bookmark">
                                 <?php
                                 the_title();
-                                $count++;
                                 ?></a>
                         </h3>
             <p>5 months ago </p>
@@ -188,9 +177,9 @@
         <div class="clearfix"></div>
         </article>
     </div><?php
-                }
-                if($cat[0]->cat_name === 'fashion' && !$fashionPulled){
-                    $fashionPulled = true;
+			endwhile;
+			query_posts('category_name=technology & posts_per_page=1');     
+            while(have_posts()):the_post();
                     ?>
                     <div class="span3">
                         <article class="post">
@@ -208,7 +197,6 @@
                                 <h3><a href="<?php the_permalink();?>" title="<?php the_title();?>" rel="bookmark">
                                         <?php
                                         the_title();
-                                        $count++;
                                         ?></a></h3>
                                 <p>5 months ago </p>
                             </div>
@@ -218,38 +206,9 @@
 
                 <?php
 
-                }
-                if($cat[0]->cat_name === 'politics' && !$politicsPulled){
-                    $politicsPulled = true;
-                    ?>
-
-                    <div class="span3">
-                        <article class="post">
-                            <a href="<?php the_permalink();?>" title="<?php the_title();?>" rel="bookmark">
-                                <?php
-                                if(has_post_thumbnail()){
-                                    the_post_thumbnail("small-thumbnail");
-                                }
-                                ?>
-<!--                                <img width="225" height="136" src="--><?php //echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-225x136.jpg';?><!--" class="thumb" alt="photodune-2043745-college-student-s" />-->
-                            </a>
-                            <div class="entry">
-                                <h3><a href="<?php the_permalink();?>" title="<?php the_title();?>" rel="bookmark">
-                                        <?php
-                                        the_title();
-                                        $count++;
-                                        ?></a></h3>
-                                <p>5 months ago </p>
-                            </div>
-                            <div class="clearfix"></div>
-                        </article>
-                    </div>
-
-                    <?php
-
-                }
-                if($cat[0]->cat_name === 'sports' && !$sportPulled){
-                    $sportPulled = true;
+                endwhile;
+				query_posts('category_name=politics & posts_per_page=1');     
+				while(have_posts()):the_post();
                     ?>
                     <div class="span3">
                         <article class="post">
@@ -265,7 +224,6 @@
                                 <h3><a href="<?php the_permalink();?>" title="<?php the_title();?>" rel="bookmark">
                                         <?php
                                         the_title();
-                                        $count++;
                                         ?></a></h3>
                                 <p>5 months ago </p>
                             </div>
@@ -275,9 +233,33 @@
 
                     <?php
 
+                endwhile;
+                query_posts('category_name=fashion & posts_per_page=1');     
+				while(have_posts()):the_post();
+                    ?>
+                    <div class="span3">
+                        <article class="post">
+                            <a href="<?php the_permalink();?>" title="<?php the_title();?>" rel="bookmark">
+                                <?php
+                                if(has_post_thumbnail()){
+                                    the_post_thumbnail("small-thumbnail");
+                                }
+                                ?>
+<!--                                <img width="225" height="136" src="--><?php //echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-225x136.jpg';?><!--" class="thumb" alt="photodune-2043745-college-student-s" />-->
+                            </a>
+                            <div class="entry">
+                                <h3><a href="<?php the_permalink();?>" title="<?php the_title();?>" rel="bookmark">
+                                        <?php
+                                        the_title();
+                                        ?></a></h3>
+                                <p>5 months ago </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </article>
+                    </div>
 
-                }
-            endforeach;
+                    <?php                
+            endwhile;
             wp_reset_postdata();
             ?>
 
@@ -342,10 +324,23 @@
         <div class="row-fluid">
             <div class="brnews span9">
                 <h3>Breaking News</h3>
-                <ul id="scroller">
-                    <li><p><a href="#" title="Permalink to Lectus non rutrum pulvinar urna leo dignissim lorem" rel="bookmark"><span class="title">Lectus non rutrum pu...</span> Nam nibh arcu, tristique eget pretium sed, porta i...</a></p></li>
-                    <li><p><a href="#" title="Permalink to Suspen disse auctor dapibus neque pulvinar urna leo" rel="bookmark"><span class="title">Suspen disse auctor ...</span> Fusce aliquet non ipsum vitae scelerisque. Nullam ...</a></p></li>
-                    <li><p><a href="#" title="Permalink to Porta lorem ipsum dolor sit amet, consectetur adipiscing risus" rel="bookmark"><span class="title">Porta lorem ipsum do...</span> Lorem ipsum dolor sit amet, consectetur adipiscing...</a></p></li>
+				<ul id="scroller">
+				<?php 
+				$args = array('category_name' => 'Breaking News' );
+
+				$myposts = get_posts( $args );
+				foreach ( $myposts as $post ) : setup_postdata( $post ); 
+				?>
+				<li><p>
+					<a href="<?php the_permalink(); ?>">
+					<span class="title"><?php the_title(); ?></span>
+					<?php the_content(); echo "the content";?>
+					</a>
+					</p>
+				</li>
+				<?php endforeach; 
+					wp_reset_postdata();
+				?>
                 </ul>
             </div>
 
@@ -359,3 +354,4 @@
     </div>
 	<div id="content" class="container">
 		<div id="main" class="row-fluid">
+<?php $wp_query = $temp_query; ?>
