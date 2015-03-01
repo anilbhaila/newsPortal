@@ -1,9 +1,7 @@
 <?php 
 get_header();
 ?>	
-		<div id="main-left" class="span8">			
-
-			
+		<div id="main-left" class="span8">
 <?php
 if (have_posts()):
     while (have_posts()): the_post();?>
@@ -36,7 +34,11 @@ if (have_posts()):
 		</ul>
 		</div>
 		<div class="entry-content">		
-		<p><img width="774" height="320" src="<?php echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-774x320.jpg';?>" alt="photodune-2043745-college-student-s" /></p>
+<!--		<p><img width="774" height="320" src="--><?php //echo get_template_directory_uri().'/images/dummy/photodune-2043745-college-student-s-774x320.jpg';?><!--" alt="photodune-2043745-college-student-s" /></p>-->
+		<p><?php  if(has_post_thumbnail()){
+                            the_post_thumbnail("banner-image");
+                        }
+                        ?></p>
 		<p><?php the_content(); ?></p>
 		<span class='st_pinterest_hcount' displayText='Pinterest'></span>
 	</div>		
